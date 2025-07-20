@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/images/swastik1.png" width="80px" height="80px" alt=""></a>
+        <ul class="navigation">
+            <li><a class="nav-link scrollto active" href="/Home.html" >Home</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/productpage.html">Product</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/about us.html">About us</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/research.html">Research</a></li>
+
+        </ul>
+    </header>
+    <br><br><br><br><br><br><br>
+    <style>
+        .design-item{
+            background-color: whitesmoke;
+            
+background-size: auto;
+        }
+        button{
+    padding: 10px 60px;
+    background: red;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+        #center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}   
+
+
+       
+    </style>
+     <!--item a-->
+     <div class="design-item">
+        <div class="design-img" style="text-align: center;">
+            <img src="/images/canonprinte4.png" id="center-image" >
+           
+            
+             </div>
+        <div class="design-title">
+           <h1>Product name : imagePROGRAF TC-20</h1> 
+           <button type="add" class="button" onclick="openPopup()">BUY NOW</button>
+           <div class="popup" id="popup">
+               <h2>Thank You!</h2>
+               <p>Thank you for shopping with us. Visit us again.</p>
+               <button type="btn" onclick="closePopup()">OK</button>
+           </div>
+            <p> Overview:
+                The Canon imagePROGRAF TC-20 is a large format printer designed for professionals in fields such as architecture, engineering, and design. With precision and efficiency in mind, this printer offers advanced features to meet the demands of high-quality large format printing.
+                
+                Key Features:
+                
+                Large Format Printing:
+                
+                Capable of printing large format documents and graphics, ideal for CAD drawings, posters, and presentations.
+                High Precision Printing:
+                
+                Utilizes advanced printing technology to achieve precise and detailed output.
+                Excellent color accuracy for professional graphics and technical documents.
+                Intuitive Touchscreen Interface:
+                
+                User-friendly touchscreen interface for easy navigation and setup.
+                Allows quick access to printer settings and functions.
+                Efficient Workflow:
+                
+                Designed to enhance workflow efficiency, accommodating various media types and sizes.
+                Fast printing speeds to meet demanding project timelines.
+                High-Quality Output:
+                
+                Utilizes advanced inkjet technology to deliver high-resolution prints with vibrant colors.
+                Suitable for producing detailed architectural plans, GIS maps, and vibrant posters.
+                Versatile Connectivity:
+                
+                Connectivity options to support various devices, including computers and mobile devices.
+                Wireless printing capabilities for added convenience.
+                Reliable Performance:
+                
+                Robust build quality and design for consistent and reliable performance.
+                Suitable for heavy-duty printing tasks in professional environments.
+                Canon Print Software:
+                
+                Compatible with Canon's proprietary print software for enhanced control over print settings.
+                Enables easy management of print jobs and settings.
+                Please note that specific features and specifications may vary, and it's important to refer to the product documentation or contact Canon directly for the most accurate and up-to-date information regarding the imagePROGRAF TC-20.
+                
+                
+                
+                
+                
+                
+                
+                
+                </p>
+            </div></div>
+            <footer>
+                <section class="footer">
+                    <p> near kamalpokhari, kathmandu, Nepal | phone no: 9810574876,9823356787 | email:swastik@gmail.com </p>
+                  <p>swastik © 2024 | PREMIUM E-COMMERCE SOLUTIONS | <p id="date"></p>   </p>
+                  <a href="/pages/about us.html" class="btn" > Contact us</a>
+                    
+                    
+                    
+                 
+                </section>
+        
+        
+                   
+            
+            <script type="text/javascript">
+            
+        
+            function display_date() {
+                    document.getElementById('date').innerHTML = Date();
+                    setTimeout(display_date, 1000)
+                }
+        
+                display_date();
+        
+                function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+            </script>
+            <!--Js time display end-->
+        
+                 
+             
+            
+            </footer>
+        
+</body>
+</html>

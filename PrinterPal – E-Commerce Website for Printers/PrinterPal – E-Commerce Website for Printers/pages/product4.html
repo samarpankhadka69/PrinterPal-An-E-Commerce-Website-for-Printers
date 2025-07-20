@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/images/swastik1.png" width="80px" height="80px" alt=""></a>
+        <ul class="navigation">
+            <li><a class="nav-link scrollto active" href="/Home.html" >Home</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/productpage.html">Product</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/about us.html">About us</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/research.html">Research</a></li>
+
+        </ul>
+    </header>
+    <br><br><br><br><br><br><br>
+    <style>
+        .design-item{
+            background-color: whitesmoke;
+            
+background-size: auto;
+
+
+        }
+        button{
+    padding: 10px 60px;
+    background: red;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+        #center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}    
+
+       
+    </style>
+     <!--item a-->
+     <div class="design-item">
+        <div class="design-img" style="text-align: center;">
+            <img src="/images/HPprinters4.png" id="center-image" >
+           
+            <button type="add" class="button" onclick="openPopup()">BUY NOW</button>
+        <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>Thank you for shopping with us. Visit us again.</p>
+            <button type="btn" onclick="closePopup()">OK</button>
+        </div>
+             </div>
+        <div class="design-title">
+           <h1>Product name : HP Smart Tank 6001 All-in-One</h1> 
+            <p> Overview:
+                Meet the HP Smart Tank 6001 All-in-One Printer, your reliable partner for high-volume printing needs. This innovative ink tank system is designed to deliver exceptional print quality, hassle-free operation, and cost efficiency, making it the perfect solution for small businesses and home offices.
+                
+                Key Features:
+                
+                Innovative Ink Tank System:
+                
+                Large, transparent ink tanks for easy monitoring of ink levels.
+                High-capacity ink reservoirs reduce the need for frequent refills.
+                All-in-One Functionality:
+                
+                Print, copy, and scan with a single versatile device.
+                Flatbed scanner for easy copying and digitization of documents.
+                Cost-Efficient Printing:
+                
+                Low-cost, high-yield ink bottles ensure economical printing.
+                Ideal for high-volume printing with minimal cost per page.
+                Wireless Connectivity:
+                
+                Built-in wireless connectivity for convenient printing from various devices.
+                Effortless mobile printing for on-the-go document handling.
+                User-Friendly Operation:
+                
+                Intuitive control panel for easy navigation and setup.
+                Simplified maintenance with spill-free ink refilling.
+                Impressive Print Quality:
+                
+                HP Thermal Inkjet technology ensures sharp text and vibrant color prints.
+                Perfect for business documents, presentations, and high-quality photos.
+                Long-lasting Performance:
+                
+                Robust build for durability and consistent performance.
+                Designed to handle high print volumes with ease.
+                HP Smart App Compatibility:
+                
+                Connect and manage your printer with the HP Smart app.
+                Remote printing, scanning, and easy setup for enhanced convenience.
+                Why Choose HP Smart Tank 6001:
+                
+                Cost-efficient, high-volume printing for small businesses and home offices.
+                Innovative ink tank system for hassle-free and economical operation.
+                Versatile all-in-one functionality for a wide range of printing needs.
+                Wireless connectivity and mobile printing options for enhanced flexibility.
+                User-friendly design with transparent ink tanks for easy monitoring.
+                Experience the convenience of the HP Smart Tank 6001 All-in-One Printer. Enjoy the benefits of cost-efficient, high-quality printing and streamline your document management tasks. Order now and elevate your printing experience!
+                
+                
+                
+                
+                
+                
+                
+                </p>
+            </div></div>
+            <footer>
+                <section class="footer">
+                    <p> near kamalpokhari, kathmandu, Nepal | phone no: 9810574876,9823356787 | email:swastik@gmail.com </p>
+                  <p>swastik © 2024 | PREMIUM E-COMMERCE SOLUTIONS | <p id="date"></p>   </p>
+                  <a href="/pages/about us.html" class="btn" > Contact us</a>
+                    
+                    
+                    
+                 
+                </section>
+        
+        
+                   
+            
+            <script type="text/javascript">
+            
+        
+            function display_date() {
+                    document.getElementById('date').innerHTML = Date();
+                    setTimeout(display_date, 1000)
+                }
+        
+                display_date();
+        
+                
+                function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+            </script>
+            <!--Js time display end-->
+        
+                 
+             
+            
+            </footer>
+        
+</body>
+</html>

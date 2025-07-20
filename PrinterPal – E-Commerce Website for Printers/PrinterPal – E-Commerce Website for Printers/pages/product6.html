@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/images/swastik1.png" width="80px" height="80px" alt=""></a>
+        <ul class="navigation">
+            <li><a class="nav-link scrollto active" href="/Home.html" >Home</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/productpage.html">Product</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/about us.html">About us</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/research.html">Research</a></li>
+
+        </ul>
+    </header>
+    <br><br><br><br><br><br><br>
+    <style>
+        .design-item{
+            background-color: whitesmoke;
+            
+background-size: auto;
+
+
+
+
+
+
+
+
+        }
+        #center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}  
+button{
+    padding: 10px 60px;
+    background: red;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: px;
+    font-weight: 500;
+    border-radius: 30px;
+} 
+
+       
+    </style>
+     <!--item a-->
+     <div class="design-item">
+        <div class="design-img" style="text-align: center;">
+            <img src="/images/canonprinte2.png" id="center-image" >
+           
+            
+             </div>
+        <div class="design-title">
+           <h1>Product name : Color imageCLASS MF656Cdw</h1> 
+           <button type="add" class="button" onclick="openPopup()">BUY NOW</button>
+           <div class="popup" id="popup">
+               <h2>Thank You!</h2>
+               <p>Thank you for shopping with us. Visit us again.</p>
+               <button type="btn" onclick="closePopup()">OK</button>
+           </div>
+            <p> Introduction:
+                Discover the perfect blend of vibrant color, advanced features, and wireless convenience with the Canon Color imageCLASS MF656Cdw. This all-in-one laser printer is designed to meet the diverse needs of modern offices, offering high-quality color prints, efficient scanning, copying, and robust connectivity options.
+                
+                Key Features:
+                
+                Vibrant Color Printing:
+                
+                Cutting-edge color laser technology delivers sharp and vivid prints.
+                Perfect for producing eye-catching marketing materials and presentations.
+                All-in-One Functionality:
+                
+                Print, scan, copy, and fax with ease using a single, compact device.
+                Versatile document handling to streamline your workflow.
+                Wireless Connectivity:
+                
+                Built-in Wi-Fi for seamless printing from laptops, tablets, and smartphones.
+                Support for mobile printing apps for on-the-go document handling.
+                User-Friendly Touchscreen Control:
+                
+                Intuitive 5-inch color touchscreen for effortless navigation and setup.
+                Customizable features and quick-access shortcuts for enhanced usability.
+                High-Speed Performance:
+                
+                Impressive printing speeds ensure rapid document production.
+                Quick first print time for minimal wait and increased efficiency.
+                Security Features:
+                
+                Secure Print feature for protected document handling.
+                Secure PIN release function for confidential print jobs.
+                Energy Efficiency:
+                
+                ENERGY STAR® certified for energy-saving operation.
+                Auto-On/Off technology contributes to reduced energy consumption.
+                Automatic Document Feeder (ADF):
+                
+                50-sheet ADF enables efficient scanning and copying of multi-page documents.
+                Duplex scanning and printing for eco-friendly and cost-effective operation.
+                Why Choose Canon Color imageCLASS MF656Cdw:
+                
+                Exceptional color printing for professional-quality documents.
+                All-in-one functionality for comprehensive document management.
+                Seamless wireless connectivity for enhanced convenience.
+                User-friendly touchscreen control for easy operation.
+                Security features for protected and confidential document handling.
+                Elevate your office's productivity with the Canon Color imageCLASS MF656Cdw. Experience the brilliance of color printing combined with advanced features and efficient document handling. Order now and take your printing capabilities to the next level!
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </p>
+            </div></div>
+            <footer>
+                <section class="footer">
+                    <p> near kamalpokhari, kathmandu, Nepal | phone no: 9810574876,9823356787 | email:swastik@gmail.com </p>
+                  <p>swastik © 2024 | PREMIUM E-COMMERCE SOLUTIONS | <p id="date"></p>   </p>
+                  <a href="/pages/about us.html" class="btn" > Contact us</a>
+                    
+                    
+                    
+                 
+                </section>
+        
+        
+                   
+            
+            <script type="text/javascript">
+            
+        
+            function display_date() {
+                    document.getElementById('date').innerHTML = Date();
+                    setTimeout(display_date, 1000)
+                }
+        
+                display_date();
+                function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+                
+                
+            </script>
+            <!--Js time display end-->
+        
+                 
+             
+            
+            </footer>
+        
+</body>
+</html>

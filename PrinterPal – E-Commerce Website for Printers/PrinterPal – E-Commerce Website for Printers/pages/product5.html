@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/images/swastik1.png" width="80px" height="80px" alt=""></a>
+        <ul class="navigation">
+            <li><a class="nav-link scrollto active" href="/Home.html" >Home</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/productpage.html">Product</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/about us.html">About us</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/research.html">Research</a></li>
+
+        </ul>
+    </header>
+    <br><br><br><br><br><br><br>
+    <style>
+        .design-item{
+            background-color: whitesmoke;
+            
+background-size: auto;
+
+        }button{
+    padding: 10px 60px;
+    background: red;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+        #center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}    
+
+        
+
+       
+    </style>
+     <!--item a-->
+     <div class="design-item">
+        <div class="design-img" style="text-align: center;">
+            <img src="/images/canonprinter1.png" id="center-image" >
+            <button type="add" class="button" onclick="openPopup()">BUY NOW</button>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+                <p>Thank you for shopping with us. Visit us again.</p>
+                <button type="btn" onclick="closePopup()">OK</button>
+            </div>
+           
+            
+             </div>
+        <div class="design-title">
+           <h1>Product name : CANON Color imageCLASS MF751Cdw</h1> 
+            <p> Introduction:
+                Elevate your office's printing capabilities with the Canon Color imageCLASS MF751Cdw, a feature-rich all-in-one color laser printer designed for efficiency and versatility. This powerhouse device combines vibrant color printing, high-speed performance, and multifunction capabilities, making it an ideal choice for small to medium-sized businesses.
+                
+                Key Features:
+                
+                Vibrant Color Printing:
+                
+                Advanced color laser technology delivers vivid and professional-quality prints.
+                Ideal for marketing materials, presentations, and color-rich documents.
+                All-in-One Functionality:
+                
+                Print, scan, copy, and fax with a single, compact device.
+                Streamlined document handling for enhanced productivity.
+                High-Speed Performance:
+                
+                Impressive printing speeds to handle large volumes efficiently.
+                Quick first print time for minimal wait and increased workflow.
+                User-Friendly Touchscreen Control:
+                
+                Intuitive 5-inch color touchscreen for easy navigation and setup.
+                Customizable shortcuts for frequently used functions.
+                Wireless Connectivity:
+                
+                Built-in Wi-Fi for seamless printing from various devices.
+                Mobile printing options for convenient on-the-go document handling.
+                Security Features:
+                
+                Secure Print feature for protected document handling.
+                Password-protected Department ID Management for controlled access.
+                Energy Efficiency:
+                
+                Energy-saving features contribute to reduced environmental impact.
+                ENERGY STAR® certified for efficient and eco-friendly operation.
+                Automatic Document Feeder (ADF):
+                
+                50-sheet ADF for efficient scanning and copying of multi-page documents.
+                Duplex scanning and printing for added convenience.
+                Why Choose Canon Color imageCLASS MF751Cdw:
+                
+                Vibrant color printing for impactful business documents.
+                All-in-one functionality for streamlined document management.
+                High-speed performance to handle demanding printing tasks.
+                User-friendly interface and touchscreen control for easy operation.
+                Security features for protected document handling.
+                Enhance your office's productivity with the Canon Color imageCLASS MF751Cdw. Whether you need high-quality color prints or efficient document handling, this all-in-one laser printer delivers on all fronts. Order now and experience the versatility and performance of the Canon Color imageCLASS MF751Cdw!
+                
+                
+                
+                
+                
+                
+                </p>
+            </div></div>
+            <footer>
+                <section class="footer">
+                    <p> near kamalpokhari, kathmandu, Nepal | phone no: 9810574876,9823356787 | email:swastik@gmail.com </p>
+                  <p>swastik © 2024 | PREMIUM E-COMMERCE SOLUTIONS | <p id="date"></p>   </p>
+                    
+                  <a href="/pages/about us.html" class="btn" > Contact us</a>
+                    
+                    
+                 
+                </section>
+        
+        
+                   
+            
+            <script type="text/javascript">
+            
+        
+            function display_date() {
+                    document.getElementById('date').innerHTML = Date();
+                    setTimeout(display_date, 1000)
+                }
+        
+                display_date();
+        
+                function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+                
+            </script>
+            <!--Js time display end-->
+        
+                 
+             
+            
+            </footer>
+        
+</body>
+</html>

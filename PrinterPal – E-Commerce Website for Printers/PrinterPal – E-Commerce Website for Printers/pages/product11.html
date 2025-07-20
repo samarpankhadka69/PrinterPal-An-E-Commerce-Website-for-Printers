@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/images/swastik1.png" width="80px" height="80px" alt=""></a>
+        <ul class="navigation">
+            <li><a class="nav-link scrollto active" href="/Home.html">Home</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/productpage.html">Product</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/about us.html">About us</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/research.html">Research</a></li>
+
+        </ul>
+    </header>
+    <br><br><br><br><br><br><br>
+    <style>
+        .design-item {
+            background-color: whitesmoke;
+
+            background-size: auto;
+
+
+
+
+
+
+
+
+        }
+
+        #center-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+            height: auto;
+        }
+
+        .popup {
+            width: 400px;
+            background: white;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+            visibility: hidden;
+            transition: transform 0.4s 0.4s;
+        }
+
+        .open-popup {
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        button {
+            padding: 10px 60px;
+            background: red;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            font-size: px;
+            font-weight: 500;
+            border-radius: 30px;
+        }
+    </style>
+    <!--item a-->
+    <div class="design-item">
+        <div class="design-img" style="text-align: center;">
+            <img src="/images/epsonprinter3.png" id="center-image">
+
+
+        </div>
+        <div class="design-title">
+            <h1>Product name : EcoTank ET-2840 Special Edition</h1>
+            <button type="add" class="button" onclick="openPopup()">BUY NOW</button>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+                <p>Thank you for shopping with us. Visit us again.</p>
+                <button type="btn" onclick="closePopup()">OK</button>
+            </div>
+            <p> Overview:
+                The EcoTank ET-2840 Special Edition is likely a variant of the Epson EcoTank printer series, known for
+                its innovative ink tank system. This special edition model is designed to offer users a cost-effective
+                and efficient printing solution, eliminating the need for traditional ink cartridges.
+
+                Key Features:
+
+                EcoTank Ink Tank System:
+
+                Refillable ink tanks instead of traditional cartridges for ultra-low-cost printing.
+                Transparent ink tanks for easy monitoring of ink levels.
+                Wireless Connectivity:
+
+                Built-in Wi-Fi for seamless wireless printing from various devices.
+                Support for mobile printing apps, enabling printing from smartphones and tablets.
+                High-Quality Printing:
+
+                Utilizes Epson's advanced inkjet technology for crisp text and vibrant color prints.
+                Suitable for both document printing and high-quality photo printing.
+                All-in-One Functionality:
+
+                Print, scan, and copy functions in a single device for versatile usage.
+                Convenient all-in-one solution for home or small office environments.
+                Compact Design:
+
+                Space-saving design for easy placement in home offices or small workspaces.
+                Efficient layout without compromising on features.
+                User-Friendly Interface:
+
+                Intuitive control panel for easy navigation and setup.
+                Simplified ink refilling process for user convenience.
+                Long-lasting Ink Supply:
+
+                High-capacity ink tanks provide a generous supply of ink, reducing the frequency of refills.
+                Cost-effective solution for users with moderate to high printing needs.
+                Energy Efficiency:
+
+                ENERGY STAR® certified for energy-efficient operation.
+                Auto-off feature contributes to reduced energy consumption.
+                Please note that specific features and specifications may vary, and it's important to refer to the
+                product documentation or contact Epson directly for the most accurate and up-to-date information
+                regarding the EcoTank ET-2840 Special Edition.
+
+
+
+
+
+
+
+
+
+            </p>
+        </div>
+    </div>
+    <footer>
+        <section class="footer">
+            <p> near kamalpokhari, kathmandu, Nepal | phone no: 9810574876,9823356787 | email:swastik@gmail.com </p>
+            <p>swastik © 2024 | PREMIUM E-COMMERCE SOLUTIONS |
+            <p id="date"></p>
+            </p>
+
+            <a href="/pages/about us.html" class="btn"> Contact us</a>
+
+
+
+        </section>
+
+
+
+
+        <script type="text/javascript">
+
+
+            function display_date() {
+                document.getElementById('date').innerHTML = Date();
+                setTimeout(display_date, 1000)
+            }
+
+            display_date();
+
+            function openPopup() {
+                popup.classList.add("open-popup")
+            }
+
+            function closePopup() {
+                popup.classList.remove("open-popup")
+            }
+        </script>
+        <!--Js time display end-->
+
+
+
+
+    </footer>
+
+</body>
+
+</html>

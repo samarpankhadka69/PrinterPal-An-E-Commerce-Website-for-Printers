@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" home page">
+    <meta name="author" content="sushant chaudhary">
+    <meta name="keywords" content="Home">
+
+    <title>Home page</title>
+    <!-- Link to external CSS and javascript file -->
+    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon and Apple touch icon -->
+    <link href="/images/swastik1.png" rel="icon">
+    <link href="/images/swastik1.png" rel="apple-touch-icon">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Logo with a link -->
+        <a href="#" class="logo"><img src="/images/swastik1.png" width="80px" height="80px" alt=""></a>
+        <!-- Navigation menu -->
+        <ul class="navigation">
+            <li><a class="nav-link scrollto active" href="/Home.html">Home</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/productpage.html">Product</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/about us.html">About us</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/research.html">Research</a></li>
+        </ul>
+    </header>
+    <!-- Header section end -->
+    <!-- Internal styles -->
+    <style>
+        .slider {
+            /* Slider styles */
+            position: relative;
+            max-width: 1000px;
+            text-align: center;
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200%;
+            height: 200%;
+            box-sizing: border-box;
+            overflow: hidden;
+            margin-left: auto;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            /* Image styles within the slider */
+            width: 300;
+            height: 60%;
+        }
+    </style>
+    <!-- internal css section end-->
+    </head>
+
+    <body>
+        <div class="slider">
+            <div id="img">
+                <img src="/images/11.png">
+            </div>
+        </div>
+        <!-- Script for the image slider -->
+        <script>
+            var images = ['/images/11.png', '/images/12.png', '/images/13.png'];
+            var x = 0;
+            var imgs = document.getElementById('img');
+            setInterval(slider, 2000);
+            function slider() {
+                if (x < images.length) {
+                    x = x + 1;
+                } else {
+                    x = 1;
+                }
+                imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+            }
+        </script>
+
+        <!-- Banner section -->
+        <section class="banner" id="banner">
+            <div class="content">
+                <!-- Heading and tagline -->
+                <h1 style="font-size: 50px;">
+                    <font color="#FF0517">PRINT</font>
+                    <font color="#fff">YOUR</font>
+                    <font color="#fff">IMAGINATION</font>
+                </h1>
+                <!-- Description and call-to-action button -->
+                <p>Quality Printing Solutions for Every Need. Explore Our Wide Range of Printers, Inks, and Paper
+                    Supplies.
+                    Elevate Your Printing Experience Today!"</p>
+                <a href="/pages/productpage.html" class="btn"> Our Products</a>
+            </div>
+        </section>
+
+        <!-- Top section with information about printer companies -->
+        <section class="top">
+            <div class="row">
+                <div class="col">
+                    <!-- Heading and content about top printer companies -->
+                    <h1>TOP PRINTER COMPANIES IN WORLD</h1>
+                    <div class="line"></div>
+                    <p>The mentioned brands, HP (Hewlett-Packard), Canon, Xerox, Epson, Panasonic, and Lexmark,
+                        represent a diverse
+                        spectrum of technology and imaging solutions. HP, a global IT giant, is recognized for its
+                        extensive lineup
+                        of consumer and business-oriented devices, including laptops, desktops, and printers. Canon, a
+                        Japanese
+                        multinational, excels in imaging and optical products, with a strong emphasis on cameras and
+                        printers.
+                        Xerox, an American corporation, is synonymous with photocopying technology and offers a range of
+                        photocopiers
+                        and printers. Epson, another Japanese electronics company, is renowned for its imaging and
+                        information
+                        equipment, particularly inkjet and laser printers. Panasonic, a multifaceted Japanese
+                        corporation, produces
+                        a wide array of consumer electronics, including printers and copiers. Lastly, Lexmark, an
+                        American company,
+                        specializes in laser printers and imaging solutions, catering to the printing needs of
+                        businesses and enterprises.
+                        Each brand brings its unique expertise and product offerings to the world of technology and
+                        imaging.</p>
+                    <!-- Call-to-action button to learn more -->
+                    <a href="/pages/blog.html" class="ctn">Learn More</a>
+                </div>
+                <!-- Column with images of printer company logos -->
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="images/HPlogo.png" width="250px" height="250px" alt="">
+                        <img src="/images/Canon-logo.png" width="250px" height="250px" alt="">
+                        <img src="/images/EpsonLogo.png" width="250px" height="250px" alt="">
+                        <img src="/images/xeroxlogo.png" width="250px" height="250px" alt="">
+                        <img src="/images/panasonic.jpg" width="250px" height="250px" alt="">
+                        <img src="/images/Lexmark.png" width="250px" height="250px" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer>
+            <section class="footer">
+                <!-- Contact information -->
+                <p> near kamalpokhari, kathmandu, Nepal | phone no: 9810574876,9823356787 | email:swastik@gmail.com </p>
+                <!-- Copyright and date -->
+                <p>swastik © 2024 | PREMIUM E-COMMERCE SOLUTIONS |
+                <p id="date"></p>
+                </p>
+                <!-- Contact us button -->
+                <a href="/pages/about us.html" class="btn"> Contact us</a>
+            </section>
+        </footer>
+
+        <!-- Script to display the current date -->
+        <script type="text/javascript">
+            function display_date() {
+                document.getElementById('date').innerHTML = Date();
+                setTimeout(display_date, 1000)
+            }
+
+            display_date();
+        </script>
+        <!-- End of date display script -->
+
+
+
+
+    </body>
+
+</html>

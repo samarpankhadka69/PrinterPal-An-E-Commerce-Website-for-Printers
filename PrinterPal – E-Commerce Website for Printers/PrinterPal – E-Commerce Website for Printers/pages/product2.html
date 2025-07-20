@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><img src="/images/swastik1.png" width="80px" height="80px" alt=""></a>
+        <ul class="navigation">
+            <li><a class="nav-link scrollto active" href="/Home.html" >Home</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/productpage.html">Product</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/blog.html">Blogs</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/about us.html">About us</a></li>
+            <li><a class="nav-link scrollto active" href="/pages/research.html">Research</a></li>
+
+        </ul>
+    </header>
+    <br><br><br><br><br><br><br>
+    <style>
+        .design-item{
+            background-color: whitesmoke;
+            
+background-size: auto;
+        }
+        button{
+    padding: 10px 60px;
+    background: red;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+        #center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+}
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}      
+
+       
+    </style>
+     <!--item a-->
+     <div class="design-item">
+        <div class="design-img" style="text-align: center;">
+            <img src="/images/HPprinters2.png" id="center-image" >
+           
+            
+             </div>
+        <div class="design-title">
+           <h1>Product name : HP Color LaserJet Pro MFP 4301fdw Wireless Printer</h1> 
+           <button type="add" class="button" onclick="openPopup()">BUY NOW</button>
+        <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>Thank you for shopping with us. Visit us again.</p>
+            <button type="btn" onclick="closePopup()">OK</button>
+        </div>
+            <p> Introduction:
+                Elevate your office printing experience with the HP Color LaserJet Pro MFP 4301fdw, an all-in-one wireless printer designed to meet the demands of modern businesses. Offering exceptional color printing, scanning, copying, and faxing capabilities, this printer is your go-to solution for high-quality, efficient document management.
+                
+                Key Features:
+                
+                Vibrant Color Printing:
+                
+                Advanced laser printing technology delivers vivid and professional color documents.
+                High-speed printing ensures rapid production of quality prints.
+                Wireless Connectivity:
+                
+                Seamlessly print from various devices with built-in wireless connectivity.
+                Mobile printing capabilities for convenient on-the-go document handling.
+                All-in-One Functionality:
+                
+                Versatile scanning, copying, and faxing for comprehensive document management.
+                ADF and flatbed scanner options for efficient digitization.
+                Intuitive Touchscreen Control:
+                
+                User-friendly touchscreen control panel simplifies navigation and setup.
+                Easily access and customize functions with the intuitive interface.
+                Energy Efficiency:
+                
+                ENERGY STAR® certified for environmentally conscious and energy-saving operation.
+                Automatic on/off technology and Instant-on Technology contribute to efficient power management.
+                Secure Printing:
+                
+                Robust security features protect sensitive information and ensure document confidentiality.
+                Secure wireless connections and PIN printing for enhanced data security.
+                High Paper Handling Capacity:
+                
+                Ample paper input capacity handles large print volumes with ease.
+                Automatic double-sided printing reduces paper consumption and costs.
+                HP Smart App Compatibility:
+                
+                Monitor and manage print jobs remotely with the HP Smart app.
+                Simplifies setup, troubleshooting, and supplies reordering for added convenience.
+                Why Choose HP Color LaserJet Pro MFP 4301fdw:
+                
+                Professional-grade color printing for impactful business documents.
+                Streamlined all-in-one functionality for a more efficient workflow.
+                Wireless connectivity and mobile printing for increased flexibility.
+                Energy-efficient design with robust security features.
+                User-friendly interface and compatibility with the HP Smart app.
+                Upgrade your office productivity with the HP Color LaserJet Pro MFP 4301fdw. Experience the perfect combination of performance, convenience, and security in a sleek and reliable device. Order now and take your printing to the next level!
+                
+                
+                
+                
+                
+                </p>
+            </div></div>
+            <footer>
+                <section class="footer">
+                    <p> near kamalpokhari, kathmandu, Nepal | phone no: 9810574876,9823356787 | email:swastik@gmail.com </p>
+                  <p>swastik © 2024 | PREMIUM E-COMMERCE SOLUTIONS | <p id="date"></p>   </p>
+                  <a href="/pages/about us.html" class="btn" > Contact us</a>
+                    
+                    
+                    
+                 
+                </section>
+        
+        
+                   
+            
+            <script type="text/javascript">
+            
+        
+            function display_date() {
+                    document.getElementById('date').innerHTML = Date();
+                    setTimeout(display_date, 1000)
+                }
+        
+                display_date();
+        
+                function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+
+            </script>
+            <!--Js time display end-->
+        
+                 
+             
+            
+            </footer>
+        
+</body>
+</html>
